@@ -1,0 +1,49 @@
+.navbar
+  padding: 8px 0
+  &__logo
+    animation: fadeInLeft
+    animation-duration: 1s
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__info
+    display: flex
+    align-items: center
+    text-align: right
+    animation: fadeInRight
+    animation-duration: 1s
+  &__address
+    flex-direction: column
+    display: flex
+    font-size: 13px
+    +reg
+    color: $text-color
+    line-height: 10px;
+  &__btn
+    padding-left: 31px
+    margin-left: 29px;
+    font-size: 13px
+    +bold 
+  &__phone
+    display: inline-block
+    color: $text-color
+    font-size: 20px
+    text-decoration: none
+    margin-top: 8px
+    +bold
+@media (max-width: 768px)
+  .navbar
+    &__contacts
+      display: none
+    &__btn
+      padding: 15px 26px 14px 26px
+    &__logo
+      width: 91px
+@media (max-width: 567px)
+  .navbar
+    padding: 17px 0
+    &__btn
+      font-size: 10px
+      padding: 15px 25px 14px 25px;
+      margin-bottom: 4px
