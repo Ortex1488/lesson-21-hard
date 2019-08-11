@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.theme.default.css">
+  <link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
     <div class="container">
       <div class="navbar-block">
         <div class="navbar__logo">
-          <img class="navbar__logo" src="img/logo.png" alt="логотип">
+          <img class="navbar__logo wow pulse" src="img/logo.png" alt="логотип">
         </div>
         <!-- /.navbar__logo -->
         <div class="navbar__info">
@@ -29,7 +30,7 @@
             <a href="tell:+7(495)42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
           </div>
           <!-- /.navbar__contacts -->
-          <button id="button" class="btn navbar__btn">Перезвоните мне</button>
+          <button id="button" class="btn navbar__btn wow bounce">Перезвоните мне</button>
         </div>
         <!-- /.navbar__info -->
       </div>
@@ -47,15 +48,15 @@
             <h1 class="hero-text__title">Внутренняя отделка помещений "под ключ"</h1>
             <span class="hero-text__subtitle">с гарантией качества, прописанной в договоре</span>
             <ul class="hero-list">
-              <li class="hero-list__item">
+              <li class="hero-list__item wow fadeInRight" data-wow-delay="0.3s">
                 <div class="hero-list__image"><img src="img/clock-circular-outline_(3).png" alt="item-img"></div>
                   <span class="hero-list__text">Точно соблюдаем сроки</span>
               </li>
-              <li class="hero-list__item">
+              <li class="hero-list__item wow fadeInLeft" data-wow-delay="0.3s">
                 <div class="hero-list__image"><img src="img/calculator.png" alt="item-img"></div>
                 <span class="hero-list__text">Рассчитаем смету на работы<br> и материалы в день обращения</span>
               </li>
-              <li class="hero-list__item">
+              <li class="hero-list__item wow fadeInRight" data-wow-delay="0.3s">
                 <div class="hero-list__image"><img src="img/paint-board-and-brush.png" alt="item-img"></div>
                 <span class="hero-list__text">Предложим более 100 вариантов исполнения дизайна Вашего жилья</span>
               </li>
@@ -89,7 +90,7 @@
             <form action="#" id="offer-form" class="form offer_form">
               <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
               <input type="tel" name="userphone" class="input offer__input" placeholder="Ваш телефон">
-              <button id="close2" class="btn offer__button">Получить бесплатный дизайн-проект</button>
+              <button id="close2" class="btn offer__button wow bounceIn">Получить бесплатный дизайн-проект</button>
             </form>
             <div class="none" class="success-support">Спасибо за заявку, скоро мы вам перезвоним.</div>
             <!-- /.form offer_form -->
@@ -124,9 +125,9 @@
           <div class="container">
             <h2 class="section-title price__title">У нас очень гибкая система скидок на комплексные работы!</h2>
             <!-- /.section-title price__title -->
-            <span class="section-subtitle price__subtitle price_itt">Прайс на наши услуги</span>
+            <span class="section-subtitle price__subtitle">Прайс на наши услуги</span>
             <div class="cards">
-              <div class="card price__card">
+              <div class="card price__card wow fadeInUp" data-wow-delay="0.1s">
                 <div class="card__image"><img class="card__item" src="img/section_card/1.jpg" alt=""></div>
                 <!-- /.card__image -->
                 <div class="card__text">
@@ -138,7 +139,7 @@
                 <!-- /.card__text -->
               </div>
               <!-- /.card -->
-              <div class="card price__card">
+              <div class="card price__card wow fadeInUp" data-wow-delay="0.2s">
                 <div class="card__image"><img class="card__item" src="img/section_card/2.jpg" alt=""></div>
                 <!-- /.card__image -->
                 <div class="card__text">
@@ -150,7 +151,7 @@
                 <!-- /.card__text -->
               </div>
               <!-- /.card -->
-              <div class="card price__card">
+              <div class="card price__card wow fadeInUp" data-wow-delay="0.3s">
                 <div class="card__image"><img class="card__item" src="img/section_card/3.jpg" alt=""></div>
                 <!-- /.card__image -->
                 <div class="card__text">
@@ -163,7 +164,7 @@
               </div>
               <!-- /.card -->
 
-              <div class="card price__card">
+              <div class="card price__card wow fadeInUp" data-wow-delay="0.4s">
                 <div class="card__image"><img class="card__item" src="img/section_card/4.jpg" alt=""></div>
                 <!-- /.card__image -->
                 <div class="card__text">
@@ -175,7 +176,7 @@
                 <!-- /.card__text -->
               </div>
               <!-- /.card -->
-              <div class="card price__card">
+              <div class="card price__card wow fadeInUp" data-wow-delay="0.5s">
                 <div class="card__image"><img class="card__item" src="img/section_card/5.jpg" alt=""></div>
                 <!-- /.card__image -->
                 <div class="card__text">
@@ -187,7 +188,7 @@
                 <!-- /.card__text -->
               </div>
               <!-- /.card -->
-              <div class="card price__card">
+              <div class="card price__card wow fadeInUp" data-wow-delay="0.6s">
                 <div class="card__image"><img class="card__item" src="img/section_card/6.jpg" alt=""></div>
                 <!-- /.card__image -->
                 <div class="card__text">
@@ -235,8 +236,10 @@
   <script src="js/scripts.js"></script>
   <script src="libs/owlcarousel2/owl.carousel.min.js"></script>
   <script src="js/slider.js"></script>
-  <script src="js/myAnime.js"></script>
-
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>

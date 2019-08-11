@@ -1,5 +1,4 @@
 
-
 $(document).ready(function () {
   var close           =   $('#close2');
   var form            =   $('.form');

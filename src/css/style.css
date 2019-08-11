@@ -148,13 +148,6 @@ input:focus {
   padding: 8px 0;
 }
 
-.navbar__logo {
-  -webkit-animation: fadeInLeft;
-          animation: fadeInLeft;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-}
-
 .navbar-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,10 +168,6 @@ input:focus {
       -ms-flex-align: center;
           align-items: center;
   text-align: right;
-  -webkit-animation: fadeInRight;
-          animation: fadeInRight;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
 }
 
 .navbar__address {
@@ -316,12 +305,6 @@ input:focus {
           justify-content: center;
   border-radius: 50%;
   margin-right: 30px;
-  -webkit-animation-name: fadeInLeft;
-          animation-name: fadeInLeft;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
 }
 
 .hero-list__text {
@@ -471,12 +454,6 @@ input:focus {
 .offer__input {
   width: 240px;
   margin-bottom: 30px;
-  -webkit-animation-name: blincInput;
-          animation-name: blincInput;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
 }
 
 .offer__input:first-child {
@@ -1024,80 +1001,26 @@ input:focus {
 }
 
 /* стили анимации */
-@-webkit-keyframes cardOne {
-  from {
-    margin-bottom: 190px;
-  }
-  to {
-    margin-bottom: 60px;
-  }
-}
-@keyframes cardOne {
-  from {
-    margin-bottom: 190px;
-  }
-  to {
-    margin-bottom: 60px;
-  }
-}
-
-@-webkit-keyframes cardTwo {
-  from {
-    margin-bottom: 290px;
-  }
-  to {
-    margin-bottom: 30px;
-  }
-}
-
-@keyframes cardTwo {
-  from {
-    margin-bottom: 290px;
-  }
-  to {
-    margin-bottom: 30px;
-  }
-}
-
-@-webkit-keyframes cardBtn {
-  from {
-    margin-left: 190px;
-    width: 10%;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes cardBtn {
-  from {
-    margin-left: 190px;
-    width: 10%;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@-webkit-keyframes fadeInLeft {
-  from {
-    margin-right: -100px;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-  to {
-    margin-right: 0px;
-  }
-}
-
-@keyframes fadeInLeft {
-  from {
-    margin-right: -100px;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-  to {
-    margin-right: 0px;
-  }
-}
+/* @keyframes cardOne
+  from
+    margin-bottom: 190px
+  to
+    margin-bottom: 60px */
+/* @keyframes cardTwo
+  from
+    margin-bottom: 290px
+  to
+    margin-bottom: 30px */
+/* @keyframes cardBtn
+  from
+    margin-left: 190px
+    width: 10%
+  to
+    width: 100% */
+/* @keyframes fadeInLeft
+  from
+    margin-right: -100px
+    transform: rotate(360deg);
+  to
+    margin-right: 0px */
 /*# sourceMappingURL=style.css.map */
