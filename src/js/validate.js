@@ -74,13 +74,13 @@ $("#offer-form").validate({
     },
     phone: "Укажите номер телефона"
   },
-  submitHandler: function (form) {
-    $('#offer-form').on('submit', function (event) {
+  submitHandler: function () {
+    /* $('#offer-form').on('submit', function (event) { */
       event.preventDefault();
       $.ajax({
         url: 'mail.php',
         type: 'POST',
-        data: $(this).serialize(),
+        data: $('#offer-form').serialize(),
         success: function (data) {
           form.hide(time_animation);
           $('form :input').val('');
@@ -90,7 +90,7 @@ $("#offer-form").validate({
             success_message.hide(time_animation);
           }, time_return);
         }
-      });
+      /* }); */
     });
   },
   errorClass: "invalid",
