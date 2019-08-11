@@ -1,11 +1,10 @@
-
 $(document).ready(function () {
   var close           =   $('#close2');
   var form            =   $('.form');
   var success_message =   $('.none');
   var time_animation  =   500;
   var time_return     =   3000;
-  $('#offer-form').on('submit', function(event) {
+  $('#offer-form').on('submit', function(event) { 
     event.preventDefault();
     $.ajax({
       url: 'mail.php',
