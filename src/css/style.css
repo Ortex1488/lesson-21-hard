@@ -843,6 +843,22 @@ input:focus {
 .brif__form {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  padding-left: 200px;
+  text-align: center;
+}
+
+.brif__input {
+  width: 100%;
+  max-width: 370px;
+  margin-bottom: 15px;
+}
+
+.brif__button {
+  height: 70px;
+  width: 100%;
+  max-width: 370px;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 .interview {
@@ -891,6 +907,70 @@ input:focus {
 
 .interview-list__text {
   max-width: 400px;
+}
+
+.form__title {
+  margin-bottom: 50px;
+  font-size: 22px;
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.form__subtitle {
+  display: block;
+  margin-bottom: 94px;
+  font-size: 16px;
+}
+
+.form__description {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .brif__form {
+    padding-left: 30px;
+  }
+  .interview {
+    padding-right: 30px;
+  }
+  .interview__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .interview__subtitle {
+    margin-bottom: 30px;
+  }
+  .interview-list__text {
+    font-size: 14px;
+    max-width: 300px;
+  }
+  .interview-list__counter {
+    margin-right: 20px;
+  }
+  .form__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .form__subtitle {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brif {
+    background-image: url("../img/brif/brif-bg-color2.jpg"), url("../img/brif/brif-bg.jpg");
+    background-position: top center, center bottom;
+    background-size: 100% 50%, cover;
+    background-repeat: repeat-x, no-repeat;
+  }
+  .brif-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .brif__form {
+    margin-top: 80px;
+  }
 }
 
 /* модельное окно */
