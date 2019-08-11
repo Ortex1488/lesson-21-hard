@@ -19,15 +19,39 @@ $("#brif-form").validate({
         required: true
       }
     },
-    messages: {
-      username: {
-        required: "Укажите ваше имя",
-        minlength: jQuery.validator.format("Осталось символов - 1"),
-        maxlength: "максимальное число символов - 15"
-      },
-      email: "Укажите корректный email адрес",
-      phone: "Укажите номер телефона",
+  messages: {
+    username: {
+      required: "Заполните Имя",
+      minlength: jQuery.validator.format("Осталось символов - 1"),
+      maxlength: "Максимальное число символов - 15"
     },
+    email: {
+      required: "Заполните поле",
+      email: "Введите корректный email"
+    },
+    phone: {
+      required: "Укажите номер телефона",
+    },
+  },
+  submitHandler: function () {
+    /* $('#offer-form').on('submit', function (event) { */
+    event.preventDefault();
+    $.ajax({
+      url: 'mail.php',
+      type: 'POST',
+      data: $('#brif-form').serialize(),
+      success: function (data) {
+        form.hide(time_animation);
+        $('form :input').val('');
+        success_message.show(time_animation);
+        setTimeout(function () {
+          form.show(time_animation);
+          success_message.hide(time_animation);
+        }, time_return);
+      }
+      /* }); */
+    });
+  },
     errorClass: "invalid",
     errorElement: "div",
   });
@@ -51,6 +75,25 @@ $("#modal-form").validate({
     phone: {
       required: "Укажите номер телефона"
     }
+  },
+  submitHandler: function () {
+    /* $('#offer-form').on('submit', function (event) { */
+    event.preventDefault();
+    $.ajax({
+      url: 'mail.php',
+      type: 'POST',
+      data: $('#modal-form').serialize(),
+      success: function (data) {
+        form.hide(time_animation);
+        $('form :input').val('');
+        success_message.show(time_animation);
+        setTimeout(function () {
+          form.show(time_animation);
+          success_message.hide(time_animation);
+        }, time_return);
+      }
+      /* }); */
+    });
   },
   errorClass: "invalid",
   errorElement: "div",
