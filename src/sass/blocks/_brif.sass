@@ -9,7 +9,7 @@
     flex-basis: 50%
   &__form
     flex-basis: 50%
-    padding-left: 200px
+    padding-left: 212px
     text-align: center
   &__input
     width: 100%
@@ -24,7 +24,10 @@
 .interview
   padding-right: 70px
   &__title
-    margin-bottom: 50px
+    width: 517px;
+    margin-bottom: 44px
+    margin-top: 9px;
+    line-height: 33px;
     font-size: 22px
     +bold
   &__subtitle
@@ -35,10 +38,13 @@
     list-style: none
     padding: 0
     &__item
-      margin-bottom: 25px
+      margin-bottom: 26px
       display: flex
       align-items: center
+      font-size: 18px;
       +bold
+      &:last-child
+        margin-top: 43px;
     &__counter
       margin-right: 30px
       display: inline-block
@@ -51,24 +57,30 @@
       border-radius: 50%
     &__text
       max-width: 400px
+      font-size: 18px;
 .form
   &__title
-    margin-bottom: 50px
+    margin-bottom: 46px
     font-size: 22px
+    margin-top: 6px;
+    line-height: 33px;
     +bold
   &__subtitle
     display: block
-    margin-bottom: 94px
+    margin-bottom: 52px
     font-size: 16px
   &__description
     display: block
 @media (max-width: 1200px)
+  .section
+    padding: 0
   .brif
     &__form
       padding-left: 30px
   .interview
     padding-right: 30px
     &__title
+      width: 440px
       font-size: 20px
       margin-bottom: 15px
     &__subtitle
@@ -95,3 +107,72 @@
       flex-direction: column
     &__form
       margin-top: 80px
+@media (max-width: 567px)
+  .brif
+    background-image: url(../img/brif/brif-bg-color2.jpg), url(../img/brif/brif-bg.jpg);
+    background-position: top center, center bottom;
+    background-size: 100% 47%, cover;
+    background-repeat: repeat-x, no-repeat;
+    &__form
+      margin-left: -32px;
+      margin-top: 100px;
+    &__input
+      margin-bottom: 8px
+  .steps
+    &__title
+      font-size: 18px
+      width: 236px
+      margin-top: -78px
+      margin-bottom: 27px
+    &__subtitle
+      font-size: 14px
+      margin-bottom: 33px
+  .step
+    &__image
+      margin-bottom: 20px
+    &__text
+      font-size: 12px
+      line-height: 16px
+  .interview
+    &__title
+      font-size: 18px;
+      margin-bottom: 13px;
+      margin-top: 45px;
+      width: 261px;
+      line-height: 21px;
+    &__subtitle
+      margin-bottom: 39px;
+      font-size: 14px
+      +bold 
+    &-list
+      min-width: 285px;
+      &__counter
+        margin-right: 6px;
+        width: 37px;
+      &__item
+        font-size: 14px;
+        margin-bottom: 18px;
+        &:last-child
+          margin-top: 24px;
+        &:first-child
+          margin-bottom: 33px;
+      &__text
+        font-size: 14px;
+        max-width: 185px;
+  .form
+    &__description
+      max-width: 191px;
+      margin: auto;
+      font-size: 14px;
+      line-height: 24px
+      margin-bottom: 29px;
+    &__title
+      width: 280px;
+      font-size: 18px;
+      margin-bottom: 22px;
+      line-height: 24px;
+    &__subtitle
+      margin-bottom: 36px;
+      font-size: 14px
+  .section.steps
+    padding: 50px 0px 41px 0px;

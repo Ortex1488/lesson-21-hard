@@ -20,6 +20,10 @@
           box-sizing: border-box;
 }
 
+b {
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
 h1 {
   margin: 0.6em 0;
 }
@@ -533,14 +537,6 @@ input.invalid {
   .offer {
     padding-top: 50px;
   }
-  .offer__title {
-    max-width: 274px;
-    line-height: 22px;
-    margin-bottom: 19px;
-    margin-top: -14px;
-    font-size: 18px;
-    margin-top: -6px;
-  }
   .offer__input {
     margin-bottom: 7px;
   }
@@ -608,9 +604,8 @@ input.invalid {
     max-width: 274px;
     line-height: 22px;
     margin-bottom: 19px;
-    margin-top: -14px;
     font-size: 18px;
-    margin-top: -6px;
+    margin-top: 43px;
   }
   .offer__input {
     margin-bottom: 7px;
@@ -666,7 +661,7 @@ input.invalid {
   .portfolio__title {
     margin: auto;
     margin-bottom: 42px;
-    padding-top: 40px;
+    padding-top: 93px;
     line-height: 21px;
     font-size: 18px;
   }
@@ -681,6 +676,7 @@ input.invalid {
 /* стили блока price */
 .price {
   padding-top: 90px;
+  padding-bottom: 32px;
 }
 
 .price__title {
@@ -810,7 +806,7 @@ input.invalid {
     margin-bottom: 25px;
     font-size: 18px;
     line-height: 21px;
-    margin-top: -39px;
+    margin-top: 51px;
   }
   .price__subtitle {
     margin-bottom: 59px;
@@ -866,7 +862,7 @@ input.invalid {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .step__text {
@@ -875,16 +871,24 @@ input.invalid {
   margin: auto;
 }
 
+.steps {
+  padding-bottom: 0px;
+}
+
 .steps__title {
-  width: 520px;
+  width: 654px;
   margin: auto;
-  margin-bottom: 59px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
 }
 
 .steps__subtitle {
   display: block;
   text-align: center;
-  margin-bottom: 58px;
+  font-size: 19px;
+  margin-bottom: 70px;
 }
 
 .steps-block {
@@ -951,7 +955,7 @@ input.invalid {
 .brif__form {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-left: 200px;
+  padding-left: 212px;
   text-align: center;
 }
 
@@ -974,7 +978,10 @@ input.invalid {
 }
 
 .interview__title {
-  margin-bottom: 50px;
+  width: 517px;
+  margin-bottom: 44px;
+  margin-top: 9px;
+  line-height: 33px;
   font-size: 22px;
   font-family: 'Museo Sans Bold', sans-serif;
 }
@@ -991,14 +998,19 @@ input.invalid {
 }
 
 .interview-list__item {
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 18px;
   font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.interview-list__item:last-child {
+  margin-top: 43px;
 }
 
 .interview-list__counter {
@@ -1015,17 +1027,20 @@ input.invalid {
 
 .interview-list__text {
   max-width: 400px;
+  font-size: 18px;
 }
 
 .form__title {
-  margin-bottom: 50px;
+  margin-bottom: 46px;
   font-size: 22px;
+  margin-top: 6px;
+  line-height: 33px;
   font-family: 'Museo Sans Bold', sans-serif;
 }
 
 .form__subtitle {
   display: block;
-  margin-bottom: 94px;
+  margin-bottom: 52px;
   font-size: 16px;
 }
 
@@ -1034,6 +1049,9 @@ input.invalid {
 }
 
 @media (max-width: 1200px) {
+  .section {
+    padding: 0;
+  }
   .brif__form {
     padding-left: 30px;
   }
@@ -1041,6 +1059,7 @@ input.invalid {
     padding-right: 30px;
   }
   .interview__title {
+    width: 440px;
     font-size: 20px;
     margin-bottom: 15px;
   }
@@ -1078,6 +1097,303 @@ input.invalid {
   }
   .brif__form {
     margin-top: 80px;
+  }
+}
+
+@media (max-width: 567px) {
+  .brif {
+    background-image: url(../img/brif/brif-bg-color2.jpg), url(../img/brif/brif-bg.jpg);
+    background-position: top center, center bottom;
+    background-size: 100% 47%, cover;
+    background-repeat: repeat-x, no-repeat;
+  }
+  .brif__form {
+    margin-left: -32px;
+    margin-top: 100px;
+  }
+  .brif__input {
+    margin-bottom: 8px;
+  }
+  .steps__title {
+    font-size: 18px;
+    width: 236px;
+    margin-top: -78px;
+    margin-bottom: 27px;
+  }
+  .steps__subtitle {
+    font-size: 14px;
+    margin-bottom: 33px;
+  }
+  .step__image {
+    margin-bottom: 20px;
+  }
+  .step__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .interview__title {
+    font-size: 18px;
+    margin-bottom: 13px;
+    margin-top: 45px;
+    width: 261px;
+    line-height: 21px;
+  }
+  .interview__subtitle {
+    margin-bottom: 39px;
+    font-size: 14px;
+    font-family: 'Museo Sans Bold', sans-serif;
+  }
+  .interview-list {
+    min-width: 285px;
+  }
+  .interview-list__counter {
+    margin-right: 6px;
+    width: 37px;
+  }
+  .interview-list__item {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+  .interview-list__item:last-child {
+    margin-top: 24px;
+  }
+  .interview-list__item:first-child {
+    margin-bottom: 33px;
+  }
+  .interview-list__text {
+    font-size: 14px;
+    max-width: 185px;
+  }
+  .form__description {
+    max-width: 191px;
+    margin: auto;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 29px;
+  }
+  .form__title {
+    width: 280px;
+    font-size: 18px;
+    margin-bottom: 22px;
+    line-height: 24px;
+  }
+  .form__subtitle {
+    margin-bottom: 36px;
+    font-size: 14px;
+  }
+  .section.steps {
+    padding: 50px 0px 41px 0px;
+  }
+}
+
+/* стилизация блока люди */
+.people {
+  margin-bottom: -45px;
+}
+
+.people-list__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.people-list__card {
+  width: 370px;
+  height: 410px;
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+.people-list__img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 11;
+}
+
+.people-list__text {
+  display: block;
+  padding-top: 23px;
+  padding-left: 26px;
+  line-height: 23px;
+  font-size: 16px;
+}
+
+/* стилизация линии */
+.section__tagline {
+  padding-top: 77px;
+  padding-bottom: 9px;
+}
+
+.tagline {
+  background-color: #ffd200;
+  height: 280px;
+}
+
+.tagline__title {
+  display: block;
+  padding-top: 87px;
+  line-height: 50px;
+  font-size: 32px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* стилизация blanck */
+.blanck {
+  padding-bottom: 226px;
+}
+
+.blanck__title {
+  max-width: 654px;
+  text-align: center;
+  margin: auto;
+  line-height: 45px;
+  font-size: 30px;
+  letter-spacing: 0.55px;
+  margin-bottom: 92px;
+}
+
+.blanck-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.blanck__item {
+  width: 270px;
+  height: 360px;
+  margin-bottom: 37px;
+  border: 20px solid #f5f5f5;
+}
+
+.blanck-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.blanck__text {
+  width: 300px;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* стилизация footer */
+.footer {
+  position: relative;
+}
+
+.map {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 70px;
+  padding-left: 211px;
+}
+
+.contacts__title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 92px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts-list {
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 23px;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 31px;
+}
+
+.contacts-list__phone {
+  text-decoration: none;
+  color: #000;
+}
+
+.contacts-list__text {
+  line-height: 25px;
+}
+
+@media (max-width: 1200px) {
+  .contacts {
+    -ms-flex-preferred-size: 67%;
+        flex-basis: 67%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    padding-left: 139px;
+  }
+  .contacts-block {
+    display: block;
+  }
+  .map {
+    width: 100%;
+    position: absolute;
+    top: 678px;
+    left: 0;
+  }
+}
+
+@media (max-width: 567px) {
+  .contacts {
+    padding-top: 0px;
+    padding-left: 1px;
+  }
+  .contacts__title {
+    font-size: 18px;
+    margin-bottom: 33px;
+    line-height: 23px;
+  }
+  .contacts-list__item {
+    font-size: 16px;
+  }
+  .map {
+    position: absolute;
+    top: 396px;
   }
 }
 
