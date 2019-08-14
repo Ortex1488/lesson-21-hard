@@ -5,14 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.theme.default.css">
-  <link rel="stylesheet" href="css/animate.css">
+  <!-- Yandex.Metrika counter -->
+  <script> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(54900220, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true, trackHash: true }); </script>
+    <!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
+  <noscript>
+    <div>
+      <img src="https://mc.yandex.ru/watch/54900220" style="position:absolute; left:-9999px;" alt="ян">
+    </div>
+  </noscript>
   <div id="toTop">
     <p class="ff">^</p> 
   </div>
@@ -29,7 +33,7 @@
             <a href="tell:+7(495)42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
           </div>
           <!-- /.navbar__contacts -->
-          <button id="button" class="btn navbar__btn wow bounce">Перезвоните мне</button>
+          <button id="button" onclick="ym(54900220, 'reachGoal', 'button'); return true;" class="btn navbar__btn wow bounce">Перезвоните мне</button>
         </div>
         <!-- /.navbar__info -->
       </div>
@@ -91,13 +95,12 @@
               <input type="tel" id="offer-phone" required name="phone" class="input offer__input" placeholder="Ваш телефон">
               <button id="close2" class="btn offer__button wow bounceIn">Получить бесплатный дизайн-проект</button>
             </form>
-            <div class="none" class="success-support">Спасибо за заявку, скоро мы вам перезвоним.</div>
+            <div class="success-support none">Спасибо за заявку, скоро мы вам перезвоним.</div>
             <!-- /.form offer_form -->
             <div class="success"></div>
             <div class="info">
-              <span class="info__support">Наш менеджер перезвонит Вам</br>
-                в течение 60 секунд</span>
-              <span class="info__support">или перезвоните нам сами <b></br>+7 (495) 42-251-31</b></span>
+              <span class="info__support">Наш менеджер перезвонит Вам<br> в течение 60 секунд</span>
+              <span class="info__support">или перезвоните нам сами <b><br>+7 (495) 42-251-31</b></span>
             </div>
           </div>
       </div>
@@ -271,17 +274,17 @@
           <div class="container">
             <div class="people-list__section">
               <div class="people-list__card">
-                <span class="people-list__text">Поможем закупить все материалы<br>
-                по оптовым ценам у проверенных<br> поставщиков</span>
+                <h5 class="people-list__text">Поможем закупить все материалы<br>
+                по оптовым ценам у проверенных<br> поставщиков</h5>
                 <img class="people-list__img" src="img/works/1.png" alt="people"></div>
               <div class="people-list__card">
-                <span class="people-list__text">
+                <h5 class="people-list__text">
                   Мы дадим Вам <b>максимальные скидки</b><br>
-                  у наших партнеров для закупки<br> материалов оптом</span>
+                  у наших партнеров для закупки<br> материалов оптом</h5>
                 <img class="people-list__img" src="img/works/2.png" alt="people"></div>
               <div class="people-list__card">
-                <span class="people-list__text">Все, что не сможете найти в городе -<br>
-                поможем заказать у <b>проверенных<br> поставщиков</b></span>
+                <h5 class="people-list__text">Все, что не сможете найти в городе -<br>
+                поможем заказать у <b>проверенных<br> поставщиков</b></h5>
                 <img class="people-list__img" src="img/works/3.png" alt="people"></div>
             </div>
           </div>
@@ -300,7 +303,6 @@
               <span class="blanck__text">Гарантия на качество<br> выполняемых работ</span>
               <span class="blanck__text">Гарантия на фиксированные цены<br> Виды работ и цены на них<br> прописаны в договоре</span>
               <span class="blanck__text">Гарантия на точное соблюдение<br> сроков и ответственность за<br> их невыполнение</span>
-            </div>
             </div>
           </div>
         </section>
@@ -353,7 +355,7 @@
 
   <footer class="footer">
     <div class="map" id="map">
-      <script type="text/javascript" charset="utf-8" async
+      <script async
         src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab2b3f19714143510be6bdfa495aed544739fc1e9058d6f400ba31d16591adc9c&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
     </div>
     <div class="container">

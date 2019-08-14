@@ -120,14 +120,19 @@
       margin-bottom: 8px
   .steps
     &__title
-      font-size: 18px
-      width: 236px
-      margin-top: -78px
-      margin-bottom: 27px
+      font-size: 18px;
+      width: 236px;
+      margin-top: -27px;
+      margin-bottom: 25px;
+      line-height: 21px;
     &__subtitle
       font-size: 14px
       margin-bottom: 33px
   .step
+    &:nth-child(3)
+      .step__text
+        width:  120px
+        margin-bottom: 11px;
     &__image
       margin-bottom: 20px
     &__text
@@ -155,7 +160,7 @@
         &:last-child
           margin-top: 24px;
         &:first-child
-          margin-bottom: 33px;
+          margin-bottom: 29px;
       &__text
         font-size: 14px;
         max-width: 185px;
@@ -170,6 +175,7 @@
       width: 280px;
       font-size: 18px;
       margin-bottom: 22px;
+      margin-top: 8px;
       line-height: 24px;
     &__subtitle
       margin-bottom: 36px;
