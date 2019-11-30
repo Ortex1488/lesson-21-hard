@@ -21,6 +21,8 @@
     max-width: 370px
     margin-top: 15px
     margin-bottom: 30px
+    padding-left: 26px
+    +bold
 .interview
   padding-right: 70px
   &__title
@@ -43,14 +45,15 @@
       align-items: center
       font-size: 18px;
       +bold
-      &:last-child
-        margin-top: 43px;
+      align-items: self-end;
     &__counter
-      margin-right: 30px
+      margin-right: 33px
       display: inline-block
       text-align: center
-      line-height: 35px
+      line-height: 30px
       font-size: 14px
+      padding-top: 1px;
+      padding-left: 3px;
       width: 35px
       height: 35px
       border: 2px solid $text-color
@@ -58,6 +61,29 @@
     &__text
       max-width: 400px
       font-size: 18px;
+  .interview
+    &-list
+      &__item
+        &:first-child
+          line-height: 1.9;
+          letter-spacing: -0.2px;
+      &:nth-child(3)
+        &__text
+          line-height: 24px;
+          margin-bottom: 5px;
+  .interview-list__item
+    &:nth-child(2)
+      margin-bottom: 28px;
+      line-height: 19px;
+      letter-spacing: -0.1px
+  .interview-list__text
+    &:nth-child(3)
+    letter-spacing: -0.1px;
+    line-height: 24px;
+    margin-bottom: 5px;
+  .interview-list:last-child
+    .interview-list__text
+      margin-top: 4px
 .form
   &__title
     margin-bottom: 46px
@@ -67,16 +93,34 @@
     +bold
   &__subtitle
     display: block
-    margin-bottom: 52px
+    margin-bottom: 50px;
     font-size: 16px
   &__description
     display: block
+  #brif-form
+    position: relative
+  #brif__name-error
+    position: absolute
+    top: 46px
+    left: 6px
+  #brif__phone-error
+    position: absolute
+    top: 124px
+    left: 6px
+  #brif__email-error
+    position: absolute
+    top: 202px
+    left: 6px
 @media (max-width: 1200px)
   .section
     padding: 0
   .brif
+    background-size: 50%, cover
+    padding-top: 20px;
+    padding-bottom: 15px;
     &__form
       padding-left: 30px
+      margin-bottom: 15px;
   .interview
     padding-right: 30px
     &__title
@@ -97,8 +141,26 @@
       margin-bottom: 15px
     &__subtitle
       margin-bottom: 30px
-@media (max-width: 768px)
+  .brif__button
+    margin-top: 0px
+@media (max-width: 777px)
+  .form
+    #brif-form
+      position: relative
+    #brif__name-error
+      position: absolute
+      top: 46px
+      left: 55px
+    #brif__phone-error
+      position: absolute
+      top: 124px
+      left: 55px
+    #brif__email-error
+      position: absolute
+      top: 202px
+      left: 55px
   .brif
+    margin: auto
     background-image: url("../img/brif/brif-bg-color2.jpg"), url("../img/brif/brif-bg.jpg")
     background-position: top center, center bottom
     background-size: 100% 50%, cover
@@ -107,11 +169,29 @@
       flex-direction: column
     &__form
       margin-top: 80px
+  .steps
+    &__title
+      width: 513px
 @media (max-width: 567px)
+  .form
+    #brif-form
+      position: relative
+    #brif__name-error
+      position: absolute
+      top: 46px
+      left: 5px
+    #brif__phone-error
+      position: absolute
+      top: 116px;
+      left: 5px;
+    #brif__email-error
+      position: absolute
+      top: 186px;
+      left: 5px;
   .brif
     background-image: url(../img/brif/brif-bg-color2.jpg), url(../img/brif/brif-bg.jpg);
     background-position: top center, center bottom;
-    background-size: 100% 47%, cover;
+    background-size: 100% 46%, cover;
     background-repeat: repeat-x, no-repeat;
     &__form
       margin-left: -32px;
@@ -128,11 +208,6 @@
     &__subtitle
       font-size: 14px
       margin-bottom: 33px
-  .step
-    &:nth-child(3)
-      .step__text
-        width:  120px
-        margin-bottom: 11px;
     &__image
       margin-bottom: 20px
     &__text
@@ -141,24 +216,32 @@
   .interview
     &__title
       font-size: 18px;
-      margin-bottom: 13px;
-      margin-top: 45px;
       width: 261px;
       line-height: 21px;
+      margin-bottom: 14px;
+      margin-top: 22px;
+      margin-left: 2px;
     &__subtitle
-      margin-bottom: 39px;
-      font-size: 14px
+      margin-bottom: 43px;
+      font-size: 14px;
+      width: 187px;
+      margin-left: 3px;
+      letter-spacing: -0.2px;
       +bold 
     &-list
       min-width: 285px;
       &__counter
-        margin-right: 6px;
+        margin-right: 8px;
         width: 37px;
       &__item
+        align-items: center;
         font-size: 14px;
         margin-bottom: 18px;
+        &:nth-child(2)
+          margin-bottom: 22px
         &:last-child
           margin-top: 24px;
+          margin-bottom: 0
         &:first-child
           margin-bottom: 29px;
       &__text
@@ -172,13 +255,28 @@
       line-height: 24px
       margin-bottom: 29px;
     &__title
-      width: 280px;
+      width: 286px;
       font-size: 18px;
-      margin-bottom: 22px;
-      margin-top: 8px;
+      margin-bottom: 24px;
+      margin-top: 6px;
       line-height: 24px;
     &__subtitle
       margin-bottom: 36px;
       font-size: 14px
   .section.steps
-    padding: 50px 0px 41px 0px;
+    padding: 50px 0px 31px 0px;
+@media (max-width: 567px)
+  .interview .interview-list__text
+    line-height: 13px;
+  .interview-list__item:first-child
+    margin-bottom: 25px;
+    margin-top: -3px;
+  .interview .interview-list:last-child .interview-list__text
+    margin-top: -6px;
+    margin-bottom: -5px;
+    line-height: 16px;
+  .interview-list__item:last-child
+    margin-top: 31px;
+  .interview-list__text-center
+    padding-top: 9px;
+    min-width: 236px;

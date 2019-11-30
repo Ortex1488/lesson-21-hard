@@ -24,7 +24,7 @@
   &__subtitle
     display: block
     max-width: 250px
-    margin-bottom: 32px
+    margin-bottom: 32px;
   &__input
     width: 240px
     margin-bottom: 30px
@@ -39,6 +39,23 @@
     color: $text-color
     font-size: 16px
     +bold
+#offer-form
+  position: relative
+#offer__name-error
+  position: absolute
+  top: 67px
+  left: 0
+.form__phone
+  position: relative
+#offer-phone-error
+  position: absolute
+  top: 67px
+  left: 256px
+#modal-form
+  position: relative
+#modal-phone-error
+  position: absolute
+  top: 166px
 @media (max-width: 1200px)
   .offer
     background-size: cover
@@ -48,6 +65,21 @@
     &__button
       font-size: 13px
       letter-spacing: -0.4px
+    &-block
+      padding-top: 35px;
+      padding-bottom: 25px;
+  #offer-form
+    position: relative
+  #offer__name-error
+    position: absolute
+    top: 46px;
+    left: 6px;
+  .form__phone
+    position: relative
+  #offer-phone-error
+    position: absolute
+    top: 119px;
+    left: 6px;
 @media (max-width: 768px)
   .offer
     background: #fff
@@ -69,6 +101,9 @@
 @media (max-width: 567px)
   .offer
     padding-top: 50px
+    &-block
+      padding-top: 22px;
+      padding-bottom: 13px;
     &__input
       margin-bottom: 7px
     &__subtitle
@@ -122,7 +157,7 @@
       line-height: 22px
       margin-bottom: 19px
       font-size: 18px
-      margin-top: 43px
+      margin-top: 22px;
     &__input
       margin-bottom: 7px;
     &__subtitle

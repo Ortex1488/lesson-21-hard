@@ -34,7 +34,6 @@ $("#brif-form").validate({
     },
   },
   submitHandler: function () {
-    /* $('#offer-form').on('submit', function (event) { */
     event.preventDefault();
     $.ajax({
       url: 'mail.php',
@@ -50,7 +49,6 @@ $("#brif-form").validate({
           success_message.hide(time_animation);
         }, time_return);
       }
-      /* }); */
     });
   },
     errorClass: "invalid",

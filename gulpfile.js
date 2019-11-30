@@ -2,6 +2,11 @@ var gulp = require('gulp');
 var cleanCSS = require('gulp-clean-css');
 var htmlmin = require('gulp-htmlmin');
 var tinyPNG = require('gulp-tinypng-compress');
+var pump = require('pump');
+var gulp = require('gulp');
+var uglify = require('gulp-uglify');
+var pipeline = require('readable-stream').pipeline;
+var rename = require("gulp-rename");
 function defaultTask(cb) {
   cb();
 }
@@ -30,6 +35,7 @@ gulp.task('fonts', function (cb) {
   cb();
 });
 
+
 gulp.task('tinyPNG', function (cb) {
   return gulp.src('./src/img/**/*.{png,jpg,jpeg}')
     .pipe(tinyPNG({
@@ -38,3 +44,19 @@ gulp.task('tinyPNG', function (cb) {
     .pipe(gulp.dest('dist/img/'));
   cb();
 });
+
+gulp.task('min-js', function (cb) {
+  return gulp.src('./src/js/*.min.js')
+  .pipe(gulp.dest('dist/js/'))
+  cb();
+})
+gulp.task('mov-min-js', function (cb){
+  pump([
+    gulp.src(['src/js/*.js', '!src/js/*.min.js']),
+    uglify(),
+    rename({ sufix: '.min'}),
+    gulp.dest('dist/js/')
+  ],
+  );
+  cb();
+})

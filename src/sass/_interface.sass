@@ -20,15 +20,25 @@ input.invalid
 .container
   width: 1170px
   margin: auto
+.success-support
+  color: green
+  padding: 55px
+.tt
+  margin-top: 200px
 @media (max-width: 1200px)
   .container
-    width: 760px
+    width: 750px
 @media (max-width: 768px)
+  .btn:hover
+    background-color: lighten($main-color, 0%)
+  .card:hover .card__image:before
+    background-image: none;
   .container
     max-width: 500px
     width: 90% 
 @media (max-width: 567px)
   .container
+    margin: auto
     max-width: 277px
 .btn
   outline: none

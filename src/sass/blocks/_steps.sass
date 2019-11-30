@@ -22,11 +22,12 @@
     justify-content: center
     align-items: center
     margin: auto
-    margin-bottom: 29px
+    margin-bottom: 27px
   &__text
     font-size: 14px
     max-width: 151px
     margin: auto
+    line-height: 20px;
   &s
     padding-bottom: 0px
     &__title
@@ -52,6 +53,9 @@
     &s
       &-block
         flex-direction: column
+      &__title
+        width: 491px
+        font-size: 22px
 @media (max-width: 1200px)
   .step
     margin-bottom: 30px
@@ -62,3 +66,25 @@
       &-block
         display: flex
         justify-content: center
+    &__title
+      width: 491px
+      font-size: 22px
+@media (max-width: 567px)
+  .step
+    &__text
+      line-height: 16px
+      font-size: 12px;
+      max-width: 133px;
+    &:nth-child(3)
+      .step__text
+        width: 140px;
+        margin-bottom: -3px;
+        margin-top: 28px;
+    &:nth-child(2)
+      .step__text
+        margin-top: 27px
+    &:nth-child(4)
+      .step__text
+        margin-top: 26px
+    &__image
+      margin-bottom: 21px

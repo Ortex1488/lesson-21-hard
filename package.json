@@ -19,10 +19,13 @@
   "homepage": "https://github.com/Ortex1488/lesson-21-hard#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.2.0"
+    "gulp-clean-css": "^4.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.2"
   },
   "dependencies": {
     "gulp-htmlmin": "^5.0.1",
-    "gulp-tinypng-compress": "^1.2.5"
+    "gulp-tinypng-compress": "^1.2.5",
+    "pump": "^3.0.0"
   }
 }

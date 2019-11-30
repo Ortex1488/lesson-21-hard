@@ -6,62 +6,64 @@
     margin: auto
     line-height: 45px
     font-size: 30px
-    letter-spacing: 0.55px
+    letter-spacing: .25px;
     margin-bottom: 92px
-  &-list
+  &-wrap
     display: flex
     justify-content: space-around
   &__item
-    width: 270px
-    height: 360px
-    margin-bottom: 37px
     border: 20px solid #f5f5f5
-  &-text
+  &__text
     display: flex
     justify-content: space-around
-  &__text
-    width: 300px
-    display: inline-block
     text-align: center
+    margin-top: 39px;
     font-size: 18px
-    line-height: 24px
+    line-height: 23px;
+    &-first
+      margin-top: 46px;
+      margin-right: 7px;
+    &-last
+      margin-top: 48px;
+      margin-right: -14px;
+  &-img__center
+    margin-left: 23px
+    margin-bottom: 18px
 @media (max-width: 1200px)
   .blanck
+    padding-bottom: 78px
+    line-height: 22px;
+    &-wrap
+      flex-wrap: wrap
     &__title
+      font-size: 20px;
       margin-top: 80px
-    &__item
-      width: 150px;
-      height: 210px;
     &__text
-      font-size: 10px;
+      font-size: 14px;
       line-height: 16px;
+      margin-top: 36px;
+      margin-left: -12px;
+      margin-bottom: 57px;
+    &-img__center
+      margin-left: 14px;
+      margin-bottom: 17px;
 @media (max-width: 768px)
   .blanck
-    &__item
-      width: 190px;
-      height: 220px;
-      border: 5px solid #f5f5f5;
+    padding-bottom: 81px;
 @media (max-width: 567px)
   .blanck
-    padding-bottom: 25px;
+    padding-bottom: 41px;
     &__title
       font-size: 18px;
       line-height: 22px;
-      margin-top: 122px;
-      margin-bottom: 49px
-    &-list
-      flex-direction: column
-    &__item
-      width: 270px
-      height: 360px
-      border: 20px solid #f5f5f5
-      margin-bottom: 109px
+      margin-top: 134px;
+      margin-bottom: 49px;
+      margin-left: 3px;
     &__text
-      font-size: 14px
-    &-text
-      flex-direction: column
-      display: none
-      &__card
-        margin-bottom: 13px;
-        &:last-child
-          margin-top: 0
+      font-size: 14px;
+      line-height: 16px;
+      margin-top: 36px;
+      margin-left: 12px;
+      margin-bottom: 45px;
+    &__item
+      &-center
